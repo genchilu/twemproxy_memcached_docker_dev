@@ -3,9 +3,9 @@
 
 1. 先用 docker 啟動三台 memcached
 ```
-$> run -d --name mc1 -d --expose 11211 memcached memcached -m 64
-$> run -d --name mc2 -d --expose 11211 memcached memcached -m 64
-$> run -d --name mc3 -d --expose 11211 memcached memcached -m 64
+$> docker run -d --name mc1 -d --expose 11211 memcached memcached -m 64
+$> docker run -d --name mc2 -d --expose 11211 memcached memcached -m 64
+$> docker run -d --name mc3 -d --expose 11211 memcached memcached -m 64
 ```
 
 2. build twemproxy docker image
