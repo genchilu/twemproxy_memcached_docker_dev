@@ -15,7 +15,7 @@ $> docker build -t genchi/twemproxy .
 
 3. 啟動 twemproxy container
 ```
-$> docker run -ti --rm --link mc1 --link mc2 --link mc3 -p 11211:11211 -p 22222:22222 genchi/twemproxy
+$> docker run --name ac-twemproxy --rm --link mc1 --link mc2 --link mc3 -p 11211:11211 -p 22222:22222 -d genchi/twemproxy
 ```
 
 透過 127.0.0.1:11211 就可以對 memached 操作了
