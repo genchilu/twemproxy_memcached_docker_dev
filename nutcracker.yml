@@ -1,0 +1,14 @@
+beta:
+  listen: 0.0.0.0:11211
+  hash: crc32a
+  hash_tag: "{}"
+  distribution: ketama
+  timeout: 1000
+  redis: false
+  preconnect: true
+  auto_eject_hosts: true
+  server_retry_timeout: 300000
+  server_failure_limit: 2
+  server_connections: 100
+  backlog: 4096
+  servers:
